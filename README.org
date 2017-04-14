@@ -1,0 +1,8 @@
+Collection of files containing snippets for customizing exports from org-mode to latex (pdf) and/or html.
+
+Usage:
+
+Browse the files to select a snippet that contains the desired functionality.
+Insert the desired snippet with C-x i (insert file command).
+
+
