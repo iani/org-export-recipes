@@ -1,0 +1,6 @@
+#+latex_compiler: xelatex
+#+LaTeX_HEADER: \usepackage{fontspec}
+#+LaTeX_HEADER: \setromanfont[Mapping=tex-text]{Times}
+#+LaTeX_HEADER: \usepackage{polyglossia}       
+#+LaTeX_HEADER: \setmainlanguage[variant=mono]{greek}  
+#+LaTeX_HEADER: \sloppy

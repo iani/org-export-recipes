@@ -1,0 +1,14 @@
+#+latex_compiler: xelatex
+#+LaTeX_HEADER: \usepackage{fontspec}
+#+LaTeX_HEADER: \setromanfont[Mapping=tex-text]{Times}
+#+LaTeX_HEADER: \usepackage{polyglossia}       
+#+LaTeX_HEADER: \setmainlanguage[variant=mono]{greek}  
+#+LaTeX_HEADER: \sloppy
+
+#+TITLE: Ελληνικά!
+
+* Ελληνικά!
+
+Ελληνικά.
+
+Note: If a =#+TITLE:= property is defined in the file, then org-export also provides the author and date entries.

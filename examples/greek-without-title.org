@@ -1,0 +1,12 @@
+#+latex_compiler: xelatex
+#+LaTeX_HEADER: \usepackage{fontspec}
+#+LaTeX_HEADER: \setromanfont[Mapping=tex-text]{Times}
+#+LaTeX_HEADER: \usepackage{polyglossia}       
+#+LaTeX_HEADER: \setmainlanguage[variant=mono]{greek}  
+#+LaTeX_HEADER: \sloppy
+
+* Ελληνικά!
+
+Ελληνικά.
+
+Note: If no =#+TITLE:= propertu is defined in a file, then the exporter also omits the date and author entries!

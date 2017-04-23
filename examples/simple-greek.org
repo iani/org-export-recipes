@@ -1,17 +1,9 @@
 #+latex_compiler: xelatex
-
 #+LaTeX_HEADER: \usepackage{fontspec}
-# #+LaTeX_HEADER: \usepackage{fontspec,xltxtra,xunicode}
-# #+LaTeX_HEADER: \defaultfontfeatures{Mapping=tex-text}
 #+LaTeX_HEADER: \setromanfont[Mapping=tex-text]{Times}
-
-# #+LaTeX_HEADER: \usepackage[greek, english]{babel}
-
-# #+LaTeX_HEADER: \usepackage{xltxtra}                             
 #+LaTeX_HEADER: \usepackage{polyglossia}       
 #+LaTeX_HEADER: \setmainlanguage[variant=mono]{greek}  
-
-# #+LaTeX_HEADER: \sloppy
+#+LaTeX_HEADER: \sloppy
 
 #+TITLE: Ο ΞΕΠΕΣΜΕΝΟΣ ΔΕΡΒΙΣΗΣ
 
