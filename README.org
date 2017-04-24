@@ -15,6 +15,6 @@ The examples here were compiled to pdf using:
 
 The recipes are files containing export customization settings for org-mode files.  Each setting is one or more lines of org-mode. Each line sets one or more properties for the file, which customize export to html or latex.
 
-The recipe files are contained in folder =recipes=.  To use a recipe in an org-mode file, insert the recipe file in the org-mode file using the =insert-file= command (C-x i).  Alternatively, use the command =org-export-insert-recipe= which is defined in file =org-export-recipes.el= and bound to =h-c i= (functiom-key-c, i).
+The recipe files are contained in folder =recipes=.  To use a recipe in an org-mode file, insert the recipe file in the org-mode file using the =insert-file= command (C-x i).  Alternatively, use the command =org-export-insert-recipe= which is defined in file =org-export-recipes.el= and bound to =h-c i= (function-key-c, i).
 
 
