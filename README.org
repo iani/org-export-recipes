@@ -4,8 +4,17 @@ Collection of files containing snippets for customizing exports from org-mode to
 
 Org-mode v 9.0 or later is required to use the =LATEX_COMPILER= option for setting the compiler to xelatex or lualatex.
 
+The examples here were compiled to pdf using:
+
+- GNU EMACS 25.1.1
+- Org mode version 9.0.2
+- pdfTeX 3.14159265-2.6-1.40.17 (TeX Live 2016), xpdf version 3.04
+- macos 10.12.4
+
 * Usage
 
-Browse the files to select a snippet that contains the desired functionality.
-Insert the desired snippet with C-x i (insert file command).
+The recipes are files containing export customization settings for org-mode files.  Each setting is one or more lines of org-mode. Each line sets one or more properties for the file, which customize export to html or latex.
+
+The recipe files are contained in folder =recipes=.  To use a recipe in an org-mode file, insert the recipe file in the org-mode file using the insert file command (C-x i).  Alternatvely, use the command =org-export-insert-recipe= which is defined in file =org-export-recipes.el= and bound to =h-c i= (functiom-key-c, i).
+
 

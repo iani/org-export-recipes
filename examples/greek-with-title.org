@@ -11,4 +11,4 @@
 
 Ελληνικά.
 
-Note: If a =#+TITLE:= property is defined in the file, then org-export also provides the author and date entries.
+*Note*: If a =#+TITLE:= property is defined in the file, then org-export also provides the author and date entries.
