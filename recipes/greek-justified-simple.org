@@ -5,7 +5,7 @@
 # Use Times font, which can print greek properly
 #+LaTeX_HEADER: \setromanfont[Mapping=tex-text]{Times}
 
-# next 2 lines switch language fir contents etc. to greek (eg. "Περιεχόμενα").
+# next 2 lines switch language for contents etc. to greek (eg. "Περιεχόμενα").
 #+LaTeX_HEADER: \usepackage{polyglossia}       
 #+LaTeX_HEADER: \setmainlanguage[variant=mono]{greek}  
 
