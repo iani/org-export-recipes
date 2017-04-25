@@ -22,7 +22,11 @@
       (goto-char 0)
      (insert-file-contents recipe))))
 
-(org-defkey org-mode-map (kbd "H-c i") 'org-export-insert-recipe)
+(add-hook 'org-mode-hook
+          '(lambda ()
+             (define-key org-mode-map (kbd "H-c i") 'org-export-insert-recipe)
+             ))
+
 
 (provide 'org-export-recipes)
 ;;; org-export-recipes.el ends here
