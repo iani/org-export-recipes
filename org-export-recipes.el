@@ -13,20 +13,23 @@
                                     (file-name-directory load-file-name)
                                     "/recipes/"))
 
-(defun org-export-insert-recipe ()
-  "Select and insert file from this folder to org-moe file."
-  (interactive)
-  (let ((recipe
-         (helm-read-file-name "select-recipe:" :initial-input org-export-recipe-folder)))
-    (save-excursion
-      (goto-char 0)
-     (insert-file-contents recipe))))
+(defconst org-export-snippet-folder (concat
+                                    (file-name-directory load-file-name)
+                                    "/snippets/"))
 
-(add-hook 'org-mode-hook
-          '(lambda ()
-             (define-key org-mode-map (kbd "H-c i") 'org-export-insert-recipe)
-             ))
+(defun org-export-insert-recipe (snippet-p)
+  "Select and insert file from this folder to org-mode file.
+If SNIPPET-P then insert snippet from snippet folder in text at point.
+Else insert recipe from recipe folder at top of file."
+  (interactive "P")
+  (if snippet-p
+      (insert-file-contents
+       (helm-read-file-name "select snippet:" :initial-input org-export-snippet-folder)))
+  (save-excursion
+    (goto-char 0)
+    (insert-file-contents  (helm-read-file-name "select recipe:" :initial-input org-export-recipe-folder))))
 
+(global-set-key (kbd "H-c i") 'org-export-insert-recipe)
 
 (provide 'org-export-recipes)
 ;;; org-export-recipes.el ends here
