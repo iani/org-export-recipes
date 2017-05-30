@@ -1,0 +1,4 @@
+#+TITLE: Insert Title Here
+#+CATEGORIES: uncategorized
+#+TAGS: no-tag
+#+OPTIONS: toc:nil num:nil
