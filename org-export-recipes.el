@@ -24,10 +24,10 @@ Else insert recipe from recipe folder at top of file."
   (interactive "P")
   (if snippet-p
       (insert-file-contents
-       (helm-read-file-name "select snippet:" :initial-input org-export-snippet-folder)))
-  (save-excursion
-    (goto-char 0)
-    (insert-file-contents  (helm-read-file-name "select recipe:" :initial-input org-export-recipe-folder))))
+       (helm-read-file-name "select snippet:" :initial-input org-export-snippet-folder))
+    (save-excursion
+      (goto-char 0)
+      (insert-file-contents  (helm-read-file-name "select recipe:" :initial-input org-export-recipe-folder)))))
 
 (global-set-key (kbd "H-c i") 'org-export-insert-recipe)
 
